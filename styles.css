@@ -1,4 +1,51 @@
-/*  Feel free to remove these styles or customise in your own stylesheet 👍  */
+:root {
+	--very-dark-blue: hsl(233, 47%, 7%);
+	--dark-desaturated-blue: hsl(244, 38%, 16%);
+	--soft-violet: hsl(277, 64%, 61%);
+
+	--white: hsl(0, 0%, 100%);
+	--white-a75: hsla(0, 0%, 100%, 0.75);
+	--white-a60: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--very-dark-blue);
+	color: var(--white);
+}
+
+.card img {
+	width: 100%;
+}
+
+.card {
+	padding: 12px;
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background-color: var(--dark-desaturated-blue);
+}
+
+.description {
+	color: var(--white-a60);
+}
+
+footer {
+	background-color: darkblue;
+	margin: 20px 0;
+	text-align: center;
+}
 
 .attribution {
 	font-size: 11px;
