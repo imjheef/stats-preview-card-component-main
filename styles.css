@@ -1,3 +1,10 @@
+/* Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Lexend Decat */
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
 :root {
 	--very-dark-blue: hsl(233, 47%, 7%);
 	--dark-desaturated-blue: hsl(244, 38%, 16%);
@@ -11,7 +18,7 @@
 * {
 	padding: 0;
 	margin: 0;
-	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
 }
 
 body {
@@ -20,44 +27,67 @@ body {
 	background-color: var(--very-dark-blue);
 	color: var(--white);
 	height: 100vh;
-}
-
-main img {
-	width: auto:
-	max-width: 100dvw;
-	object-fit: scale-down;
+	margin: 0 12px;
 }
 
 .card {
 	display: flex;
-	margin: auto 20%;
+	justify-content: space-between;
+	max-width: 800px;
+	/* min-width: 300px; */
+	margin: auto;
 	border-radius: 8px;
-	align-items: center;
 	background-color: var(--dark-desaturated-blue);
 	overflow: hidden;
-	outline: red 1px solid;
+}
+
+.card div {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 32px;
+}
+
+.color-soft-violet {
+	color: var(--soft-violet);
 }
 
 .description {
+	display: flex;
+	font-size: 13px;
+	line-height: 1.7;
 	color: var(--white-a60);
 }
 
-.key-points,
-.text-container {
+.key-points {
 	display: flex;
-	gap: 42px;
+	align-items: center;
+	gap: 30px;
+	font-family: 'Lexend Deca', sans-serif;
 }
 
-.text-container {
+.uppercase-text-bold {
+	text-transform: uppercase;
+	font-size: 10px;
+	font-weight: 300;
+	color: var(--white-a75);
+}
+
+picture {
+	display: block;
+	height: auto;
+	height: max-content;
+	background-color: hsl(285, 100%, 50%);
+}
+
+picture img {
 	display: flex;
-	flex-direction: column;
-	padding: 54px;
+	opacity: 0.65;
 }
 
 footer {
 	background-color: darkblue;
 	margin: 20px 0;
-	text-align: center;
 }
 
 .attribution {
